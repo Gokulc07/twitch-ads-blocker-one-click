@@ -13,11 +13,11 @@ You do **not** need to publish anything to any store to use it.
 ### 1) Download the latest package (recommended)
 
 - Chrome/Brave/Opera/Vivaldi package:
-  - <https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-chrome-latest.zip>
+  - [Download Chrome Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-chrome-latest.zip)
 - Edge package:
-  - <https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-edge-latest.zip>
+  - [Download Edge Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-edge-latest.zip)
 - Firefox package:
-  - <https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-firefox-latest.zip>
+  - [Download Firefox Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-firefox-latest.zip)
 
 If these links do not work yet, use **Code -> Download ZIP** from the repo page.
 
