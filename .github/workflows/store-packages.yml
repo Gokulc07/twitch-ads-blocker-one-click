@@ -1,0 +1,43 @@
+name: Build Store Packages
+
+on:
+  workflow_dispatch:
+    inputs:
+      firefox_extension_id:
+        description: "Optional Firefox add-on ID (gecko.id)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build store packages
+        env:
+          FIREFOX_EXTENSION_ID: ${{ inputs.firefox_extension_id }}
+        run: |
+          if [ -n "$FIREFOX_EXTENSION_ID" ]; then
+            ./scripts/package-stores.sh
+          else
+            unset FIREFOX_EXTENSION_ID
+            ./scripts/package-stores.sh
+          fi
+
+      - name: Detect version
+        id: version
+        run: |
+          VERSION=$(node -e 'const fs=require("fs");const m=JSON.parse(fs.readFileSync("extension/manifest.json","utf8"));process.stdout.write(m.version);')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Upload store packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: store-packages-v${{ steps.version.outputs.version }}
+          path: dist/stores/${{ steps.version.outputs.version }}/*

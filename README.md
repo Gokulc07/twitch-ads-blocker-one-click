@@ -9,6 +9,7 @@ Most Twitch ad-block solutions work as scripts, but setup is difficult for non-t
 - simple install (load unpacked extension)
 - simple updates (`./scripts/update-vaft.sh`)
 - reproducible packaging (`./scripts/build-zip.sh`)
+- store-ready release packaging (`./scripts/package-stores.sh`)
 
 ## Quick start
 
@@ -36,6 +37,20 @@ Most Twitch ad-block solutions work as scripts, but setup is difficult for non-t
 - Runs daily at `07:19 UTC` and can also be started manually from **Actions**.
 - If upstream `vaft` changes, it opens an automated pull request with refreshed bundled files.
 
+## Store packaging
+
+1. Build store packages:
+   ```bash
+   ./scripts/package-stores.sh
+   ```
+2. Optional: override Firefox add-on ID:
+   ```bash
+   FIREFOX_EXTENSION_ID=\"your-addon-id@example.com\" ./scripts/package-stores.sh
+   ```
+3. Upload zips from `dist/stores/<version>/` to each store.
+4. Follow the publish checklist: `docs/store-publish-checklist.md`.
+5. Optional: build store packages from GitHub Actions with `.github/workflows/store-packages.yml`.
+
 ## Files
 
 - `extension/manifest.json`: MV3 extension manifest
@@ -49,7 +64,10 @@ Most Twitch ad-block solutions work as scripts, but setup is difficult for non-t
 - `extension/injected/upstream.txt`: source/version/commit metadata from last sync
 - `scripts/update-vaft.sh`: pulls latest upstream `vaft.user.js` and strips userscript metadata
 - `scripts/build-zip.sh`: creates `dist/twitch-ads-blocker-extension.zip`
+- `scripts/package-stores.sh`: creates Chrome/Edge/Firefox release zips in `dist/stores/<version>/`
 - `.github/workflows/upstream-sync.yml`: scheduled/manual upstream sync automation
+- `.github/workflows/store-packages.yml`: manual CI build for store package artifacts
+- `docs/store-publish-checklist.md`: release checklist for Chrome/Edge/Firefox stores
 
 ## Limitations
 
