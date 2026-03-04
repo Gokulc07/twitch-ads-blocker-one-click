@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  width: 280px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f7fb;
+  color: #1a1f36;
+}
+
+.panel {
+  padding: 14px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.state,
+.meta {
+  margin: 8px 0;
+  font-size: 12px;
+  color: #42495f;
+}
+
+.state.on {
+  color: #0a6f34;
+}
+
+.state.off {
+  color: #8f1e2f;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: #2563eb;
+}
+
+button:hover {
+  background: #1e4fc5;
+}

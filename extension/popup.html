@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitch Ads Blocker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Twitch Ads Blocker</h1>
+
+      <label class="row" for="enabledToggle">
+        <span>Ad Blocking</span>
+        <input id="enabledToggle" type="checkbox" />
+      </label>
+
+      <p id="stateText" class="state"></p>
+      <p id="engineVersion" class="meta">Engine version: loading...</p>
+
+      <button id="reloadBtn" type="button">Reload Twitch Tab</button>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
