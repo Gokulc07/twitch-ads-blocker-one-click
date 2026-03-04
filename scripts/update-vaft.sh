@@ -36,7 +36,6 @@ in_meta { next }
   echo "source=$URL"
   echo "version=${VERSION:-unknown}"
   echo "commit=${COMMIT:-unknown}"
-  echo "updated_utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
 } > "$META"
 
 echo "Updated VAFT engine"

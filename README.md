@@ -30,6 +30,12 @@ Most Twitch ad-block solutions work as scripts, but setup is difficult for non-t
    - Click **Reload Twitch Tab** to apply changes immediately.
    - Check the conflict status line; if a conflict is detected, disable other Twitch-specific ad blockers and reload Twitch.
 
+## Automated updates
+
+- GitHub Actions workflow: `.github/workflows/upstream-sync.yml`
+- Runs daily at `07:19 UTC` and can also be started manually from **Actions**.
+- If upstream `vaft` changes, it opens an automated pull request with refreshed bundled files.
+
 ## Files
 
 - `extension/manifest.json`: MV3 extension manifest
@@ -43,6 +49,7 @@ Most Twitch ad-block solutions work as scripts, but setup is difficult for non-t
 - `extension/injected/upstream.txt`: source/version/commit metadata from last sync
 - `scripts/update-vaft.sh`: pulls latest upstream `vaft.user.js` and strips userscript metadata
 - `scripts/build-zip.sh`: creates `dist/twitch-ads-blocker-extension.zip`
+- `.github/workflows/upstream-sync.yml`: scheduled/manual upstream sync automation
 
 ## Limitations
 
